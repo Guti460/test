@@ -1,0 +1,165 @@
+* {
+    margin : 0px;
+    padding : 0px;
+}
+
+body {
+    background-color: rgb(71, 71, 71)
+}
+header{
+    display: flex;
+    position: fixed;
+    background-color: rgb(71,71,71);
+    height: 70px;
+    width: 100%;    
+    font-size : 20px;    
+    z-index:2;
+}
+nav{
+    display: flex;
+    position: fixed;
+    top:4px;
+    left:1%;
+    background-color: rgb(104, 104, 86);
+    height: 60px;
+    width: 98%;    
+    font-size : 20px;    
+    border-radius: 10px;
+    z-index:2;
+}
+
+#logo {
+        display: flex;
+        position: fixed;
+        top:20px;
+        left:15px;
+        height:100px;
+        z-index:3;
+}
+#menu {
+    display: flex;
+    position: fixed;
+    top:7px;
+    left:120px;
+    height: 55px;
+    width: max-content;
+    font-size : 20px;
+    border-radius:10px;
+    font-family: "Roboto", Sans-serif;
+    z-index: 3; /*Crea una capa nueva por encima, si tenemos una con valor 2 estará a una altura o por encima de una con 
+                      valor 1*/
+                      margin-left: 15%; /*Con este margen posicionamos el div donde queramos*/
+                      maring-top: 40%;
+}
+#opc1{
+    display:flex;
+    position:fixed;
+    left: 22%;
+    height: 55px;
+    background-color: red;
+    border-radius: 10px;
+
+}
+#opc2{
+    display:flex;
+    position:fixed;
+    left: 33%;
+    height: 55px;
+    background-color:green;
+    border-radius: 10px;
+}
+#opc3{
+    display:flex;
+    position:fixed;
+    left: 43%;
+    height: 55px;
+    background-color:blue;
+    border-radius: 10px;
+}
+#location {
+    display: flex;
+    width: max-content;
+    height: max-content;
+    position: fixed;
+    top: 70px;
+    left:750px;
+    font-size : 20px;
+    background-color: white;
+    border-radius: 10px
+    z-index:3;
+}
+main {
+    display: flex;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 70px;
+    left:1%;
+    font-size : 20px;
+    /*background-color: gainsboro;*/
+    border-radius: 10px
+}
+.contenedor {
+    display:grid;
+    position: relative;
+    left: 20px;
+    min-width=60px;
+    max-width:700px;
+    padding-bottom: 8em;
+    border-radius: 10px;
+    z-index:1;
+    grid-template-areas:
+                       "cont1 cont2";
+                       "cont3 cont4";
+
+}
+.cont1 {
+        padding: 10px;
+        position: relative;
+        width: 300px;
+        margin-right: 10px;
+        z-index: 1000;
+        background-color: gainsboro;
+        border-radius: 10px;
+}
+.cont2 {
+    padding: 10px;
+    position: relative;
+    width: 300px;
+    z-index: 1000;
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+.cont3 {
+    padding: 10px;
+    margin-top: 5px;
+    position: relative;
+    width: 300px;
+    z-index: 1000;
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+.cont4 {
+    padding: 10px;
+    margin-top: 5px;
+    position: relative;
+    width: 300px;
+    z-index: 1000;
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    background-color: rgb(71,71,71);
+    height: 70px;
+    width: 100%;    
+    font-size : 20px;    
+    z-index:2;
+    width: 100%;
+    height: max-content;
+    bottom: 0%;
+    font-size : 20px;
+/*    background-color: red;*/
+}
